@@ -23,6 +23,7 @@ public class ProblemSet5 {
 
       System.out.println(ps.surroundMe("bommer", "yuhh"));
       System.out.println(ps.endsMeet("test", 1));
+      System.out.println(ps.middleMan("lambo"));
     }
 
     /*
@@ -76,7 +77,13 @@ public class ProblemSet5 {
      */
 
     public String middleMan(String text) {
-      return "1";
+      if (text != null && (text.length() % 2) != 0) {
+        return text.substring(text.length()/2 -1, text.length()/2 +2);
+      }else if(text == null){
+        return null;
+      }else {
+        return text;
+      }
     }
 
     /*
