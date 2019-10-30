@@ -21,9 +21,10 @@ public class ProblemSet5 {
     public static void main(String[] args) {
       ProblemSet5 ps = new ProblemSet5();
 
-      System.out.println(ps.surroundMe("bommer", "yuhh"));
-      System.out.println(ps.endsMeet("test", 1));
-      System.out.println(ps.middleMan("lambo"));
+      // System.out.println(ps.surroundMe("bommer", "yuhh"));
+      // System.out.println(ps.endsMeet("test", 1));
+      // System.out.println(ps.middleMan("lambo"));
+      System.out.println(ps.isCentered("dddnulddd", "nul"));
     }
 
     /*
@@ -94,7 +95,15 @@ public class ProblemSet5 {
      */
 
     public boolean isCentered(String text, String target) {
-      return true;
+      if (text == null || target == null || (text.length() % 2) == 0 || text.length() < 3 || target.length() != 3) {
+        return false;
+      }else {
+        if ((text.substring(text.length()/2 -1, text.length()/2 +2)).equals(target)) {
+          return true;
+        }else {
+          return false;
+        }
+      }
     }
 
     /*
