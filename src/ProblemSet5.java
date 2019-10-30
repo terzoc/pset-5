@@ -21,7 +21,8 @@ public class ProblemSet5 {
     public static void main(String[] args) {
       ProblemSet5 ps = new ProblemSet5();
 
-      System.out.println(ps.surroundMe("boomer", "bruh"));
+      System.out.println(ps.surroundMe("bommer", "yuhh"));
+      System.out.println(ps.endsMeet("test", 1));
     }
 
     /*
@@ -32,14 +33,19 @@ public class ProblemSet5 {
      */
 
     public String surroundMe(String in, String out) {
-      if (in != null && out != null && out.length()==4) {
-        String out1 = out.substring(0, 2);
-        String out2 = out.substring(2);
-        String result = out1 + in +out2;
-        return result;
+      if (in == null) {
+        return null;
       }else {
-        return in;
+        if (null != out && out.length()==4) {
+          String out1 = out.substring(0, 2);
+          String out2 = out.substring(2);
+          String result = out1 + in +out2;
+          return result;
+        }else {
+          return in;
+        }
       }
+
     }
 
     /*
@@ -50,7 +56,17 @@ public class ProblemSet5 {
      */
 
     public String endsMeet(String text, int n) {
-      return "1";
+      if (text == null) {
+        return null;
+      }else {
+        int length = text.length();
+        if(n <= length && text != null && n > 0 && length > 0 && n <= 10){
+          String output = text.substring(0,n) + text.substring(length-n);
+          return output;
+        }else {
+          return text;
+        }
+      }
     }
 
     /*
