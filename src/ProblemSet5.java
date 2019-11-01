@@ -106,7 +106,7 @@ public class ProblemSet5 {
      */
 
     public int countMe(String text, char suffix) {
-      if (((suffix >= 'a' && suffix <= 'z') || (suffix >= 'A' && suffix <= 'Z')) && text != null) {
+      if (Character.isAlphabetic(suffix) && text != null) {
         int output = 0;
         String[] words = text.split(" ");
         for (int i = 0; i < words.length; i++ ) {
@@ -130,9 +130,13 @@ public class ProblemSet5 {
      * Given a string, compute the number of triplets in text.
      */
 
-    public int triplets(String text) {
-      return 1;
-    }
+    // public int triplets(String text) {
+    //   for (int i = 1; i < text.length(); i++ ) {
+    //     char char1 = text.charAt(i-1);
+    //     char char2 = text.charAt(i);
+    //     char char3 = text.charAt(t+1);
+    //   }
+    // }
 
     /*
      * Exercise 7.
