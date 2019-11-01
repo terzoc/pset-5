@@ -1,20 +1,12 @@
-/**
- * Problem Set 5.
- *
- * It's time to put your skills to the test. This problem set focuses on using
- * built-in methods, most notable of the String class. It is also your first
- * introduction to methods that accept parameters and return values. The main
- * method is declared, but it is up to you to implement. Write your code for each
- * exercise in the corresponding method. Make sure you test your code thoroughly.
- *
- * The specifications for each exercise are outlined below. Your job is to write
- * lines of code to produce answers to my questions. Each exercise requires that
- * you ask the user to enter one or more values. Your code must meet the
- * requirements set forth in this section.
- *
- * Work through these exercises on your own. Experiment, make mistakes, ask
- * questions, and fix your mistakes. It's the only way to get good at programming.
- */
+/*
+* Problem Set 5.
+* Copyright (c) 2019. UCVTS and its affiliated.
+*
+* Use is allowed as long as credit is given.
+*/
+
+import java.util.Arrays;
+import java.lang.String;
 
 public class ProblemSet5 {
 
@@ -24,7 +16,8 @@ public class ProblemSet5 {
       // System.out.println(ps.surroundMe("bommer", "yuhh"));
       // System.out.println(ps.endsMeet("test", 1));
       // System.out.println(ps.middleMan("lambo"));
-      System.out.println(ps.isCentered("dddnulddd", "nul"));
+      // System.out.println(ps.isCentered("dddnulddd", "nul"));
+      System.out.println(ps.countMe("bruh is there big licks", 's'));
     }
 
     /*
@@ -113,7 +106,22 @@ public class ProblemSet5 {
      */
 
     public int countMe(String text, char suffix) {
-      return 1;
+      if (((suffix >= 'a' && suffix <= 'z') || (suffix >= 'A' && suffix <= 'Z')) && text != null) {
+        int output = 0;
+        String[] words = text.split(" ");
+        for (int i = 0; i < words.length; i++ ) {
+          if (words[i].endsWith(Character.toString(suffix))) {
+            output ++;
+          }
+        }
+        if (output == 0) {
+          return -1;
+        }else {
+          return output;
+        }
+      }else {
+        return -1;
+      }
     }
 
     /*
