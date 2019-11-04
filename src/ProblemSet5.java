@@ -18,7 +18,8 @@ public class ProblemSet5 {
       // System.out.println(ps.middleMan("lambo"));
       // System.out.println(ps.isCentered("dddnulddd", "nul"));
       // System.out.println(ps.countMe("bruh is there big licks", 's'));
-         System.out.println(ps.triplets("aaabbbccc"));
+      // System.out.println(ps.triplets("aaabbbccc"));
+      System.out.println(ps.addMe("123 abc 123"));
     }
 
     /*
@@ -155,7 +156,18 @@ public class ProblemSet5 {
      */
 
     public long addMe(String text) {
-      return 1;
+      if (text != null) {
+        int sumOfDigits = 0;
+        for (int i = 0; i < text.length(); i++ ) {
+          char char1 = text.charAt(i);
+          if (Character.isDigit(char1)) {
+            sumOfDigits += Character.getNumericValue(char1);
+          }
+        }
+        return sumOfDigits;
+      }else {
+        return -1;
+      }
     }
 
     /*
