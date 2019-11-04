@@ -17,7 +17,8 @@ public class ProblemSet5 {
       // System.out.println(ps.endsMeet("test", 1));
       // System.out.println(ps.middleMan("lambo"));
       // System.out.println(ps.isCentered("dddnulddd", "nul"));
-      System.out.println(ps.countMe("bruh is there big licks", 's'));
+      // System.out.println(ps.countMe("bruh is there big licks", 's'));
+         System.out.println(ps.triplets("aaabbbccc"));
     }
 
     /*
@@ -130,13 +131,22 @@ public class ProblemSet5 {
      * Given a string, compute the number of triplets in text.
      */
 
-    // public int triplets(String text) {
-    //   for (int i = 1; i < text.length(); i++ ) {
-    //     char char1 = text.charAt(i-1);
-    //     char char2 = text.charAt(i);
-    //     char char3 = text.charAt(t+1);
-    //   }
-    // }
+    public int triplets(String text) {
+      if (text != null) {
+        int numberOfTriplets = 0;
+        for (int i = 1; i < text.length()-1; i++ ) {
+          char char1 = text.charAt(i-1);
+          char char2 = text.charAt(i);
+          char char3 = text.charAt(i+1);
+          if (char1 == char2 && char2 == char3) {
+            numberOfTriplets -= -1;
+          }
+        }
+        return numberOfTriplets;
+      }else {
+        return -1;
+      }
+    }
 
     /*
      * Exercise 7.
