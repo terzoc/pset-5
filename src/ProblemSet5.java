@@ -20,7 +20,8 @@ public class ProblemSet5 {
       // System.out.println(ps.countMe("bruh is there big licks", 's'));
       // System.out.println(ps.triplets("aaabbbccc"));
       // System.out.println(ps.addMe("123 abc 123"));
-      System.out.println(ps.sequence("abbcccdddd"));
+      // System.out.println(ps.sequence("abbcccdddd"));
+      System.out.println(ps.sequence("aceg", "bdfh"));
     }
 
     /*
@@ -209,6 +210,9 @@ public class ProblemSet5 {
      */
 
     public String intertwine(String a, String b) {
+      for (; ; ) {
+
+      }
       return "1";
     }
 
