@@ -19,7 +19,8 @@ public class ProblemSet5 {
       // System.out.println(ps.isCentered("dddnulddd", "nul"));
       // System.out.println(ps.countMe("bruh is there big licks", 's'));
       // System.out.println(ps.triplets("aaabbbccc"));
-      System.out.println(ps.addMe("123 abc 123"));
+      // System.out.println(ps.addMe("123 abc 123"));
+      System.out.println(ps.sequence("abbcccdddd"));
     }
 
     /*
@@ -177,7 +178,27 @@ public class ProblemSet5 {
      */
 
     public long sequence(String text) {
-      return 1;
+      if (text != null) {
+        long longestSequence = 1;
+        long sequenceLength = 1;
+        char char1 = ' ';
+        char char2 = ' ';
+        for (int i = 1; i < text.length(); i++ ) {
+          char1 = text.charAt(i-1);
+          char2 = text.charAt(i);
+          if (char1 == char2) {
+            sequenceLength -= -1;
+            if (sequenceLength > longestSequence) {
+              longestSequence = sequenceLength;
+            }
+           } else {
+             sequenceLength = 1;
+           }
+        }
+          return longestSequence;
+      }else {
+        return -1;
+      }
     }
 
     /*
