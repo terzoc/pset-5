@@ -183,11 +183,11 @@ Given two strings, return a new string built by intertwining each of the charact
 * `b` must not be `null`.
 
 ```
-sequence("aceg", "bdfh") → "abcdefgh"
-sequence("abc", "12345") → "a1b2c345"
-sequence(null, "abcd")   → null
-sequence("abcd", null)   → null
-sequence(null, null)     → null
+intertwine("aceg", "bdfh") → "abcdefgh"
+intertwine("abc", "12345") → "a1b2c345"
+intertwine(null, "abcd")   → null
+intertwine("abcd", null)   → null
+intertwine(null, null)     → null
 ```
 
 Remember, your code will need to handle atypical cases, too. `null` values, empty `String`s, and special characters (including escape sequences) are all valid inputs.
@@ -203,7 +203,7 @@ A palindrome is case-sensitive. Use of the `StringBuilder` or `StringBuffer` cla
 ```
 isPalindrome("racecar") → true
 isPalindrome("Madam")   → false
-isPalindrome(null))     → false
+isPalindrome(null)      → false
 ```
 
 Remember, your code will need to handle atypical cases, too. `null` values, empty `String`s, and special characters (including escape sequences) are all valid inputs.
