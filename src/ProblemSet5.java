@@ -21,7 +21,9 @@ public class ProblemSet5 {
       // System.out.println(ps.triplets("aaabbbccc"));
       // System.out.println(ps.addMe("123 abc 123"));
       // System.out.println(ps.sequence("abbcccdddd"));
-      System.out.println(ps.sequence("aceg", "bdfh"));
+      // System.out.println(ps.sequence("aceg", "bdfh"));
+      System.out.println(ps.intertwine("aceg", "bdfh"));
+      System.out.println(ps.intertwine("abc", "12345"));
     }
 
     /*
@@ -210,10 +212,31 @@ public class ProblemSet5 {
      */
 
     public String intertwine(String a, String b) {
-      for (; ; ) {
+      long longestString = 0;
+      boolean longestStringA = false;
+      String combined = "";
 
+      if (a != null && b != null) {
+        if (a.length() > b.length()) {
+          longestString = a.length();
+          longestStringA = true;
+        }else {
+          longestString = b.length();
+        }
+        for (int i = 0;i < longestString; i++) {
+          if (i < a.length() && i < b.length()) {
+            combined += String.valueOf(a.charAt(i));
+            combined += String.valueOf(b.charAt(i));
+          }else if (i < a.length()) {
+            combined += String.valueOf(a.charAt(i));
+          }else if (i < b.length()) {
+            combined += String.valueOf(b.charAt(i));
+          }
+        }
+        return combined;
+      }else {
+        return null;
       }
-      return "1";
     }
 
     /*
