@@ -22,8 +22,11 @@ public class ProblemSet5 {
       // System.out.println(ps.addMe("123 abc 123"));
       // System.out.println(ps.sequence("abbcccdddd"));
       // System.out.println(ps.sequence("aceg", "bdfh"));
-      System.out.println(ps.intertwine("aceg", "bdfh"));
-      System.out.println(ps.intertwine("abc", "12345"));
+      // System.out.println(ps.intertwine("aceg", "bdfh"));
+      // System.out.println(ps.intertwine("abc", "12345"));
+      System.out.println(ps.isPalindrome("racecar"));
+      System.out.println(ps.isPalindrome("Madam"));
+      System.out.println(ps.isPalindrome(null));
     }
 
     /*
@@ -246,6 +249,19 @@ public class ProblemSet5 {
      */
 
     public boolean isPalindrome(String text) {
-      return true;
+      boolean isPalindrome = false;
+      String reverse = "";
+
+      if (text != null) {
+        for (int i = text.length()-1 ; i >= 0; i--) {
+          reverse += String.valueOf(text.charAt(i));
+        }
+        if (text.equals(reverse)) {
+          isPalindrome = true;
+        }
+        return isPalindrome;
+      }else {
+        return false;
+      }
     }
 }
