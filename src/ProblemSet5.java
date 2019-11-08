@@ -61,6 +61,7 @@ public class ProblemSet5 {
       System.out.println(ps.sequence("abbcccdddd"));
       System.out.println(ps.sequence("aAabBbBb"));
       System.out.println(ps.sequence(""));
+      System.out.println(ps.sequence("   "));
       System.out.println(ps.sequence(null));
 
       System.out.println("\nExercise 9");
@@ -69,7 +70,7 @@ public class ProblemSet5 {
       System.out.println(ps.intertwine(null, "abcd"));
       System.out.println(ps.intertwine("abcd", null));
       System.out.println(ps.intertwine(null, null));
-      
+
       System.out.println("\nExercise 10");
       System.out.println(ps.isPalindrome("racecar"));
       System.out.println(ps.isPalindrome("Madam"));
@@ -248,7 +249,7 @@ public class ProblemSet5 {
              sequenceLength = 1;
            }
         }
-          if (char1 == ' ') {
+          if (text.length() == 0) {
             longestSequence = 0;
           }
           return longestSequence;
