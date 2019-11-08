@@ -12,56 +12,57 @@ public class ProblemSet5 {
 
     public static void main(String[] args) {
       ProblemSet5 ps = new ProblemSet5();
-      System.out.println("Exercise 1");
-      System.out.println(ps.surroundMe("bommer", "\\\\\\\\"));
-      System.out.println(ps.surroundMe("cde", "abfg"));
-      System.out.println(ps.surroundMe(null, "####"));
-      System.out.println(ps.surroundMe("abc", null));
-      System.out.println(ps.surroundMe("abc", "123"));
-
-      System.out.println("\nExercise 2");
-      System.out.println(ps.endsMeet("abcdefg", 2));
-      System.out.println(ps.endsMeet(null, 2));
-      System.out.println(ps.endsMeet("", 2));
-      System.out.println(ps.endsMeet("abc", -1));
-
-      System.out.println("\nExercise 3");
-      System.out.println(ps.middleMan("abcdefg"));
-
-      System.out.println(ps.middleMan(null));
-      System.out.println(ps.middleMan("12"));
-      System.out.println(ps.middleMan("a"));
-
-      System.out.println("\nExercise 4");
-      System.out.println(ps.isCentered("abcdefg", "cde"));
-      System.out.println(ps.isCentered("abcdefg", "abc"));
-      System.out.println(ps.isCentered(null, "abc"));
-      System.out.println(ps.isCentered("abcd", "abc"));
-      System.out.println(ps.isCentered("abc", null));
-      System.out.println(ps.isCentered("abcdefg", "cd"));
-
-      System.out.println("\nExercise 5");
-      System.out.println(ps.countMe("bruh is there big licks", 's'));
-      System.out.println(ps.countMe("I am an example sentence", 'e'));
-      System.out.println(ps.countMe(null, 'a'));
-      System.out.println(ps.countMe("abc$ def$", '$'));
-
-      System.out.println("\nExercise 6");
-      System.out.println(ps.triplets("aaabbbccc"));
-      System.out.println(ps.triplets("aaaa"));
-      System.out.println(ps.triplets("abc"));
-      System.out.println(ps.triplets(null));
-
-      System.out.println("\nExercise 7");
-      System.out.println(ps.addMe("123 abc 123"));
-      System.out.println(ps.addMe("abcdefghijk"));
-      System.out.println(ps.addMe(null));
+      // System.out.println("Exercise 1");
+      // System.out.println(ps.surroundMe("bommer", "\\\\\\\\"));
+      // System.out.println(ps.surroundMe("cde", "abfg"));
+      // System.out.println(ps.surroundMe(null, "####"));
+      // System.out.println(ps.surroundMe("abc", null));
+      // System.out.println(ps.surroundMe("abc", "123"));
+      //
+      // System.out.println("\nExercise 2");
+      // System.out.println(ps.endsMeet("abcdefg", 2));
+      // System.out.println(ps.endsMeet(null, 2));
+      // System.out.println(ps.endsMeet("", 2));
+      // System.out.println(ps.endsMeet("abc", -1));
+      //
+      // System.out.println("\nExercise 3");
+      // System.out.println(ps.middleMan("abcdefg"));
+      //
+      // System.out.println(ps.middleMan(null));
+      // System.out.println(ps.middleMan("12"));
+      // System.out.println(ps.middleMan("a"));
+      //
+      // System.out.println("\nExercise 4");
+      // System.out.println(ps.isCentered("abcdefg", "cde"));
+      // System.out.println(ps.isCentered("abcdefg", "abc"));
+      // System.out.println(ps.isCentered(null, "abc"));
+      // System.out.println(ps.isCentered("abcd", "abc"));
+      // System.out.println(ps.isCentered("abc", null));
+      // System.out.println(ps.isCentered("abcdefg", "cd"));
+      //
+      // System.out.println("\nExercise 5");
+      // System.out.println(ps.countMe("bruh is there big licks", 's'));
+      // System.out.println(ps.countMe("I am an example sentence", 'e'));
+      // System.out.println(ps.countMe(null, 'a'));
+      // System.out.println(ps.countMe("abc$ def$", '$'));
+      //
+      // System.out.println("\nExercise 6");
+      // System.out.println(ps.triplets("aaabbbccc"));
+      // System.out.println(ps.triplets("aaaa"));
+      // System.out.println(ps.triplets("abc"));
+      // System.out.println(ps.triplets(null));
+      //
+      // System.out.println("\nExercise 7");
+      // System.out.println(ps.addMe("123 abc 123"));
+      // System.out.println(ps.addMe("abcdefghijk"));
+      // System.out.println(ps.addMe(null));
 
       System.out.println("\nExercise 8");
-      System.out.println(ps.sequence("abbcccdddd"));
-      System.out.println(ps.sequence("aAabBbBb"));
+      // System.out.println(ps.sequence("abbcccdddd"));
+      // System.out.println(ps.sequence("aAabBbBb"));
       System.out.println(ps.sequence(""));
       System.out.println(ps.sequence("   "));
+<<<<<<< HEAD
       System.out.println(ps.sequence(null));
 
       System.out.println("\nExercise 9");
@@ -75,6 +76,21 @@ public class ProblemSet5 {
       System.out.println(ps.isPalindrome("racecar"));
       System.out.println(ps.isPalindrome("Madam"));
       System.out.println(ps.isPalindrome(null));
+=======
+      // System.out.println(ps.sequence(null));
+
+      // System.out.println("\nExercise 9");
+      // System.out.println(ps.intertwine("aceg", "bdfh"));
+      // System.out.println(ps.intertwine("abc", "12345"));
+      // System.out.println(ps.intertwine(null, "abcd"));
+      // System.out.println(ps.intertwine("abcd", null));
+      // System.out.println(ps.intertwine(null, null));
+      //
+      // System.out.println("\nExercise 10");
+      // System.out.println(ps.isPalindrome("racecar"));
+      // System.out.println(ps.isPalindrome("Madam"));
+      // System.out.println(ps.isPalindrome(null));
+>>>>>>> 8feb9aaef54ebc5f32ffed431172f744644d24f1
     }
 
     /*
